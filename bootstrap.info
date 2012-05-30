@@ -1,0 +1,101 @@
+name = bootstrap
+description = Drupal base theme built with Twitter's Bootstrap CSS framework.
+
+core = 6.x
+engine = phptemplate
+
+stylesheets[screen,projection][] = css/bootstrap-min.css
+stylesheets[screen,projection][] = css/style.css
+
+scripts[] = scripts/general.js
+
+screenshot = screenshot.png
+
+regions[header_right_top] = Header Top Right
+regions[header_right_bottom] = Header Top Bottom
+regions[header] = Header
+regions[content] = Content
+regions[full_width] = Full Width
+regions[left] = Left Column
+regions[right] = Right Column
+regions[left_lower] = Left Column Lower
+regions[right_lower] = Right Column Lower
+regions[footer_left] = Footer Left Column
+regions[footer_middle] = Footer Middle Column
+regions[footer_right] = Footer Right Column
+
+; Default
+layouts[default][name] = "Default"
+layouts[default][description] = "Default layout"
+layouts[default][template] = "page"
+layouts[default][regions] = "header_right_top"
+layouts[default][regions] = "header_right_bottom"
+layouts[default][regions] = "content"
+layouts[default][regions] = "right"
+layouts[default][regions] = "footer_left"
+layouts[default][regions] = "footer_middle"
+layouts[default][regions] = "footer_right"
+
+; Feature
+layouts[homepage][name] = "Feature Page"
+layouts[homepage][description] = "Template for the homepage and section landing pages"
+layouts[homepage][template] = "feature"
+layouts[homepage][regions][] = "header_right_top"
+layouts[homepage][regions][] = "header_right_bottom"
+layouts[homepage][regions][] = "left"
+layouts[homepage][regions][] = "content"
+layouts[homepage][regions][] = "right"
+layouts[homepage][regions][] = "full_width"
+layouts[homepage][regions][] = "left_lower"
+layouts[homepage][regions][] = "right_lower"
+layouts[homepage][regions][] = "footer_left"
+layouts[homepage][regions][] = "footer_middle"
+layouts[homepage][regions][] = "footer_right"
+
+; Content with sidebar
+layouts[sidebar][name] = "Content with Sidebar"
+layouts[sidebar][description] = "Content pages with a sidebar"
+layouts[sidebar][template] = "page"
+layouts[sidebar][regions][] = "header_right_top"
+layouts[sidebar][regions][] = "header_right_bottom"
+layouts[sidebar][regions][] = "content"
+layouts[sidebar][regions][] = "right"
+layouts[sidebar][regions][] = "footer_left"
+layouts[sidebar][regions][] = "footer_middle"
+layouts[sidebar][regions][] = "footer_right"
+
+; One Column
+layouts[onecol][name] = "Single Column"
+layouts[onecol][description] = "Full Column, Full Width"
+layouts[onecol][template] = "one-col"
+layouts[onecol][regions][] = "header_right_top"
+layouts[onecol][regions][] = "header_right_bottom"
+layouts[onecol][regions][] = "content"
+layouts[onecol][regions][] = "footer_left"
+layouts[onecol][regions][] = "footer_middle"
+layouts[onecol][regions][] = "footer_right"
+
+; Let's enable some features
+features[] = logo
+features[] = name
+features[] = slogan
+features[] = mission
+features[] = node_user_picture
+features[] = comment_user_picture
+features[] = search
+features[] = favicon
+features[] = primary_links
+features[] = secondary_links
+
+; Set the default settings to be used in theme-settings.php
+settings[bootstrap_block_edit_links]        = 1
+settings[bootstrap_rebuild_registry]        = 0
+settings[bootstrap_showgrid]                = 0
+settings[bootstrap_animated_submit]         = 1
+
+; Information added by drupal.org packaging script on 2011-03-14
+version = "6.25"
+core = "6.x"
+project = "bootstrap"
+datestamp = "1300142767"
+

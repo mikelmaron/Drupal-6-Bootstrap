@@ -1,0 +1,7 @@
+BOOTSTRAP for D6
+---
+
+A theme for a Drupal 6 community website based on Twitter Bootstrap v2.X (http://twitter.github.com/bootstrap).
+
+Install:
+Add theme folder to your Drupal 'sites/all/themes/' directory.  You may rename the default folder to something else before installation.
