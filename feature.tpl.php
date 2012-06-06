@@ -32,26 +32,29 @@
 	</div>
 
 	<div class="row">
-		<div class="span7">
+		<div id="page_content" class="span12">
+			<h1 id="page_title"><?php print $title; ?></h1>
 			<?php print $content; ?>
+		</div>
+		<div id="left_upper" class="span7">
 			<?php print $left; ?>
 		</div>
-		<div class="span5">
+		<div id="right_upper" class="span5">
 			<?php print $right; ?>
 		</div>
 	</div>
 
 	<div class="row">
-		<div class="span12">
+		<div id="full_width" class="span12">
 			<?php print $full_width; ?>
 		</div>
 	</div>
 
 	<div class="row">
-		<div class="span6">
+		<div id="left_lower" class="span6">
 			<?php print $left_lower; ?>
 		</div>
-		<div class="span6">
+		<div id="right_lower" class="span6">
 			<?php print $right_lower; ?>
 		</div>
 	</div>

@@ -29,9 +29,10 @@
 	</div>
 
 	<div class="row">
-		<div class="span8">
-			<h2 class="page-title"><?php print $title; ?></h2>
+		<div id="content" class="span8">
+			<h2 id="page-title"><?php print $title; ?></h2>
 			<?php print $content; ?>
+			<?php print $left; ?>
 		</div>
 
 		<div id="sidebar" class="span4">
