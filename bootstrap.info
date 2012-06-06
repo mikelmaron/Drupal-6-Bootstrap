@@ -15,14 +15,14 @@ regions[header_right_top] = Header Top Right
 regions[header_right_bottom] = Header Top Bottom
 regions[header] = Header
 regions[content] = Content
-regions[full_width] = Full Width
-regions[left] = Left Column
-regions[right] = Right Column
-regions[left_lower] = Left Column Lower
-regions[right_lower] = Right Column Lower
-regions[footer_left] = Footer Left Column
-regions[footer_middle] = Footer Middle Column
-regions[footer_right] = Footer Right Column
+regions[full_width] = Full Width Blocks
+regions[left] = Left Column Blocks
+regions[right] = Right Column Blocks
+regions[left_lower] = Left Column Lower Blocks
+regions[right_lower] = Right Column Lower Blocks
+regions[footer_left] = Footer Left Column Blocks
+regions[footer_middle] = Footer Middle Column Blocks
+regions[footer_right] = Footer Right Column Blocks
 
 ; Default
 layouts[default][name] = "Default"
