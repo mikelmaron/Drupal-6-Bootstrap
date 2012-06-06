@@ -5,7 +5,7 @@ html {
 	background: #efefe7 url(../images/bg.png) repeat 0 0;
 	}
 body {
-	color: #333;
+	color: #111;
 	height: 100%;
 	background: inherit;
 	font-size: 14px;
@@ -77,6 +77,12 @@ a:active {
 /* reset (Drupal defaults) */
 .block ul {
 	padding: 0;
+	}
+
+/* reset (Bootstrap) */
+.views-field-field-image-fid span a,
+.views-field-field-image-fid span img {
+	margin-left: 0 !important;
 	}
 
 
@@ -439,7 +445,7 @@ h1.title {
 	font-size: 18px;
 	}
 .block-views .content {
-	margin: 8px;
+	margin: 10px;
 	}
 .block-views .content h3,
 .block-views .content h4 {
@@ -455,24 +461,21 @@ h1.title {
 
 /* PAGE: Homepage */
 
-body.front #main {
+/* mission statement */
+body#welcome-grassroots-jerusalem #page_content h1#page_title {
+	display: none;
 	}
-
-/* welcome */
-#block-block-16 {
-	}
-#block-block-16.block .inner {
-	margin: 0;
-	}
-#block-block-16 h2.title {
+body#welcome-grassroots-jerusalem #page_content p,
+body#welcome-grassroots-jerusalem #page_content h2 {
 	font-weight: normal;
 	font-style: italic;
-	font-size: 300%;
-	line-height: 1em;
+	font-size: 20px;
+	line-height: 25px;
 	font-family: Georgia, serif;
 	text-shadow: 1px 1px 0 #fff;
+	margin-bottom: 15px;
 	}
-#block-block-16 p {
+#page_content p {
 	margin: 0;
 	font-size: 16px;
 	line-height: 22px;
@@ -485,20 +488,17 @@ body.front #main {
 .block-feature-stories	 {
 	position: relative;
 	overflow: hidden;
-	height: 500px;
+	height: 360px;
 	}
 .block-feature-stories .view-features {
 	margin: 0;
-}
-.block-feature-stories .views-field-title,
-.block-feature-stories .views-field-body,
-.block-feature-stories a.read-more {
-	color: #fff;
-	background-color: rgba(0,0,0,.85);
-	font-weight: bold;
-}
+	}
 .block-feature-stories .views-field-title {
-	margin-top: 1px;
+	position: absolute;
+	top: 0;
+	width: 530px;
+	overflow: hidden;
+	background-color: rgba(94,50,22,.85);
 }
 .block-feature-stories .views-field-title a {
 	display: block;
@@ -506,6 +506,8 @@ body.front #main {
 	text-decoration: none;
 	text-shadow: 1px 1px 1px #000;
 	font-size: 20px;
+	color: #fff;
+	font-weight: bold;
 }
 .block-feature-stories .views-field-title a:hover {
 	color: #fff;
@@ -514,20 +516,6 @@ body.front #main {
 .block-feature-stories .views-field-title h3 {
 	margin: 0;
 	color: #fff;
-}
-.block-feature-stories .views-field-body {
-	padding: 8px 19px;
-}
-.block-feature-stories .views-field-body p {
-	margin: 0;
-}
-.block-feature-stories . {
-	}
-.block-feature-stories a.read-more {
-	display: block;
-	padding: 5px 12px 5px 20px;
-	text-shadow: 1px 1px 1px #000;
-	font-size: 14px;
 }
 .block-feature-stories .views-slideshow-controls-bottom {
 	position: absolute;
@@ -552,35 +540,33 @@ body.front #main {
 	}
 
 /* latest stories */
-.latest-stories {
+.block-views .content .latest-stories {
 	font-size: 11px;
 	}
-.latest-stories .content h2 {
+.block-views .content .latest-stories h2 ,
+.block-views .content .latest-stories h3 {
+	font-size: 14px;
+	line-height: 18px;
 	margin-bottom: 5px;
 	}
-.latest-stories .content h3 {
-	margin-bottom: 0;
-	font-size: 16px;
-	}
-.latest-stories ul {
+.block-views .content .latest-stories ul {
 	margin: 0;
 	}
-.latest-stories ul li {
+.block-views .content .latest-stories ul li {
 	list-style-type: none;
 	padding: 3px 0;
 	overflow: hidden;
 	}
-.latest-stories li p {
+.block-views .content .latest-stories li p {
 	font-size: 12px;
 	}
-.latest-stories ul li div.views-field-field-image-fid {
+.block-views .content .latest-stories ul li div.views-field-field-image-fid {
 	overflow: hidden;
 	float: left;
 	margin-right: 10px;
 	padding: 2px;
-	border: 1px solid #ddd;
 	}
-.latest-stories ul li img {
+.block-views .content .latest-stories ul li img {
 	vertical-align: top;
 	}
 
@@ -672,8 +658,11 @@ body#stories .views-field-created {
 	font-size: 90%;
 	}
 .view-stories .views-field-field-image-fid {
-	float: left;
-	margin: 0 15px 15px 0;
+	float: right;
+	margin: 0 0 15px 15px;
+	padding: 6px;
+	border: 1px solid #ddd;
+	background-color: #fff !important;
 	}
 
 /*//	STORY pages */
