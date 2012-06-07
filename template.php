@@ -481,8 +481,8 @@ function bootstrap_pager($tags = array(), $limit = 10, $element = 0, $parameters
         }
         if ($i == $pager_current) {
           $items[] = array(
-            'class' => 'pager-current',
-            'data' => $i,
+            'class' => 'active',
+            'data' => '<a href="#">'.$i.'</a>',
           );
         }
         if ($i > $pager_current) {
